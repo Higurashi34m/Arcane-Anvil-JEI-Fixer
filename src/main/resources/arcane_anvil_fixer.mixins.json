@@ -4,7 +4,9 @@
   "package": "dev.higurashi.arcane_anvil_fixer.mixin",
   "compatibilityLevel": "JAVA_17",
   "refmap": "${mod_id}.refmap.json",
-  "mixins": [],
+  "mixins": [
+    "ArcaneAnvilRecipeMakerMixin"
+  ],
   "client": [],
   "injectors": {
     "defaultRequire": 1
