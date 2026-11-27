@@ -1,0 +1,86 @@
+[versions]
+jei  = "19.27.0.340"
+jade = "7545219" # 15.10.5
+
+# dependency
+ironsSpellbooks  = "1.21.1-3.15.1"
+geckoLib         = "4.9"
+curiosAPI        = "9.5.0+1.21.1"
+playerAnimator   = "2.0.4+1.21.1"
+
+# optimization
+sodium      = "6382651" # 0.6.13
+c2me        = "8646869" # 0.4.0-alpha.0.120
+chloride    = "8179136" # 1.7.8
+modernFix   = "8459650" # 5.27.20
+ferriteCore = "7524151" # 7.0.3
+moreCulling = "7748843" # 1.0.7
+lithium     = "8330365" # 0.15.4
+
+# utility
+appleSkin       = "7854442" # 3.0.9
+betterF3        = "5873258" # 11.0.3
+betterModList   = "8539658" # 21.1.0
+clothConfig     = "5729127" # 15.0.140
+emi             = "8081408" # 1.1.24
+iris            = "6661598" # 1.8.12
+mouseTweaks     = "5637846" # 2.26.1
+polyglotTooltip = "8570876" # 1.6.0
+panoptic        = "8622623" # 1.08a
+sodiumOptions   = "6091021" # 1.8.3
+
+[libraries]
+jei-api = { module = "mezz.jei:jei-1.21.1-neoforge-api", version.ref = "jei" }
+jei     = { module = "mezz.jei:jei-1.21.1-neoforge",     version.ref = "jei" }
+jade    = { module = "curse.maven:jade-324717",          version.ref = "jade" }
+
+# dependency
+ironsSpellbooks  = { module = "io.redspace:irons_spellbooks",                      version.ref = "ironsSpellbooks" }
+geckoLib         = { module = "software.bernie.geckolib:geckolib-neoforge-1.21.1", version.ref = "geckoLib" }
+curiosAPI        = { module = "top.theillusivec4.curios:curios-neoforge",          version.ref = "curiosAPI" }
+playerAnimator   = { module = "dev.kosmx.player-anim:player-animation-lib-forge",  version.ref = "playerAnimator" }
+
+# optimization
+sodium      = { module = "curse.maven:sodium-394468",       version.ref = "sodium" }
+c2me        = { module = "curse.maven:c2me-533097",         version.ref = "c2me" }
+chloride    = { module = "curse.maven:chloride-931925",     version.ref = "chloride" }
+modernFix   = { module = "curse.maven:modernfix-790626",    version.ref = "modernFix" }
+ferriteCore = { module = "curse.maven:ferritecore-429235",  version.ref = "ferriteCore" }
+moreCulling = { module = "curse.maven:moreculling-630104",  version.ref = "moreCulling" }
+lithium     = { module = "curse.maven:lithium-360438",      version.ref = "lithium" }
+
+# utility
+appleSkin       = { module = "curse.maven:appleskin-248787",                version.ref = "appleSkin"}
+betterF3        = { module = "curse.maven:betterf3-401648",                 version.ref = "betterF3" }
+betterModList   = { module = "curse.maven:better-modlist-neoforge-1089803", version.ref = "betterModList"}
+clothConfig     = { module = "curse.maven:cloth-config-348521",             version.ref = "clothConfig" }
+emi             = { module = "curse.maven:emi-580555",                      version.ref = "emi"}
+iris            = { module = "curse.maven:irisshaders-455508",              version.ref = "iris"}
+mouseTweaks     = { module = "curse.maven:mouse-tweaks-60089",              version.ref = "mouseTweaks" }
+polyglotTooltip = { module = "curse.maven:polyglottooltip-1485078",         version.ref = "polyglotTooltip" }
+panoptic        = { module = "curse.maven:panoptic-1620784",                version.ref = "panoptic" }
+sodiumOptions   = { module = "curse.maven:reeses-sodium-options-511319",    version.ref = "sodiumOptions"}
+
+[bundles]
+optimization = [
+    "sodium",
+    "c2me",
+    "chloride",
+    "clothConfig",
+    "modernFix",
+    "ferriteCore",
+    "moreCulling",
+    "lithium",
+]
+
+utility = [
+    "appleSkin",
+    "betterF3",
+    "betterModList",
+    "emi",
+    "iris",
+    "mouseTweaks",
+    "polyglotTooltip",
+    "panoptic",
+    "sodiumOptions"
+]
